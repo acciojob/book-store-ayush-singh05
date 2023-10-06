@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("books")
 public class BookController {
     @Autowired
-    BookService bookService;
+    BookService bookService = new BookService();
 
     // One example controller, make the rest by yourself
     @PostMapping("/create-book")
